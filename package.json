@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/from-zero-to-fullstack/javascript-calculator/issues"
   },
-  "homepage": "https://github.com/from-zero-to-fullstack/javascript-calculator#readme"
+  "homepage": "https://github.com/from-zero-to-fullstack/javascript-calculator#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
