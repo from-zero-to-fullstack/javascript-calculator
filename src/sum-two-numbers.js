@@ -1,21 +1,64 @@
+// Opção 1:
+import rl from 'readline';
 
-const readline = require("readline");
-const rl = readline.createInterface({
-    input:process.stdin,
-    output: process.stdout
-});
+var readline = rl.createInterface(
+    process.stdin,
+    process.stdout
+);
 
-rl.question("Please, digit the first number to sum: ", function(num1) {
-    rl.question("Please, digit the second number to sum: ", function (num2){
-        console.log(`The result of your sum is: ${Number(num1) + Number(num2)}`);
-        rl.close();
+let firstNumber = 0;
+let secondNumber = 0;
+let result = 0;
+
+function sum() {
+    result = firstNumber + secondNumber;
+}
+
+function showResult() {
+    console.log(`The sum of ${firstNumber} with ${secondNumber} is: ${result}`);
+}
+
+function main() {
+    readline.question('Enter first number: ', (num) => {
+        firstNumber = parseFloat(num);
+
+        readline.question('Enter second number: ', (num) => {
+            secondNumber = parseFloat(num);
+
+            sum();
+            showResult();
+
+            readline.close();
+        });
     });
-});
+}
 
-rl.on("close", function(){
-    console.log("\nThanks for using me!! See you next time!!");
-    process.exit(0);
-})
+main();
+
+// Opção 2:
+import rl from 'readline';
+
+var readline = rl.createInterface(
+    process.stdin,
+    process.stdout
+);
+
+function main() {
+    readline.question('Enter first number: ', (num) => {
+        const firstNumber = parseFloat(num);
+
+        readline.question('Enter second number: ', (num) => {
+            const secondNumber = parseFloat(num);
+
+            const result = firstNumber + secondNumber
+            console.log(`The sum of ${firstNumber} with ${secondNumber} is: ${result}`);
+
+            readline.close();
+        });
+    });
+}
+
+main();
 
 
 /* Baseei-me neste exemplo:
