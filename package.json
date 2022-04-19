@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "From zero to FullStack - an unofficial course led by [Pedro Soares](https://github.com/pncsoares) with the aim of guiding and helping two friends to learn programming and become software developers.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/from-zero-to-fullstack/javascript-calculator/issues"
   },
-  "homepage": "https://github.com/from-zero-to-fullstack/javascript-calculator#readme"
+  "homepage": "https://github.com/from-zero-to-fullstack/javascript-calculator#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
 }
