@@ -55,7 +55,7 @@ readline.question('\nChoose the operation:\n  [0] Sum\n  [1] Subtract\n  [2] Mul
             });
         }
     }
-    else (inputedOperation == '3') {
+    else if (inputedOperation == '3') {
         function divide() {
             readline.question('Enter first number: ', (num) => {
                 const firstNumber = parseFloat(num);
@@ -71,4 +71,4 @@ readline.question('\nChoose the operation:\n  [0] Sum\n  [1] Subtract\n  [2] Mul
             });
         }
     }
-};
+});
