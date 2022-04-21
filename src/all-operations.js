@@ -1,3 +1,7 @@
+/**
+ * import readline package from node.js
+ */
+
 import rl from 'readline';
 
 var readline = rl.createInterface(
@@ -5,6 +9,16 @@ var readline = rl.createInterface(
     process.stdout
 );
 
+/**
+ * @typedef {number} firstNumber
+ * @typedef {number} secondNumber
+ * @typedef {number} result
+ */
+
+/**
+ * Function responsable for displaying the questions to the user and receive the user's input
+ * 
+ */
 readline.question('\nChoose the operation:\n  [0] Sum\n  [1] Subtract\n  [2] Multiply\n  [3] Divide\n> ', function (inputedOperation) {
 
     if (inputedOperation == '0') {

@@ -8,10 +8,17 @@ This respository aims to create a calculator, made in vanilla JavaScript with un
 
 # Technologies
 
-- [HTML](https://www.w3schools.com/html/)
-- [CSS](https://www.w3schools.com/css/)
-- [JavaScript](https://www.javascript.com)
-- [Jest](https://jestjs.io)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org/en/docs/)
+- [Jest](https://jestjs.io/docs/getting-started)
+
+## External packages
+
+### `import rl from 'readline';`
+
+Readline Module in Node.js allows the reading of input stream line by line.
+
+[Documentation 📄](https://www.geeksforgeeks.org/node-js-readline-module/)
 
 # Setup
 
