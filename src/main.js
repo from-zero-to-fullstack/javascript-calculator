@@ -1,4 +1,4 @@
-import { sum, subtract, divide, multiply } from './func'
+import { sum, subtract, divide, multiply } from './func.js'
 
 sum(4, 4);
 subtract(10, 2);
