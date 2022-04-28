@@ -1,5 +1,8 @@
 {
   "name": "javascript-calculator",
+  "jest": {
+    "verbose": true
+  },
   "version": "1.0.0",
   "description": "From zero to FullStack - an unofficial course led by [Pedro Soares](https://github.com/pncsoares) with the aim of guiding and helping two friends to learn programming and become software developers.",
   "main": "index.js",
