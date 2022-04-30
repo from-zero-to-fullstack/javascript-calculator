@@ -165,3 +165,70 @@ describe('Divide function tests', () => {
         expect(divide(null, null)).toBeNaN();
     })
 })
+
+describe('Multiply function tests', () => {
+
+    test('I expect that 1 * 1 equals to 1', () => {
+        expect(multiply(1, 1)).toBe(1);
+    })
+
+    test('I expect that 0 * 1 equals to 0', () => {
+        expect(multiply(0, 1)).toBe(0);
+    })
+
+    test('I expect that 0 * 15016 equals to 0', () => {
+        expect(multiply(0, 15016)).toBe(0);
+    })
+
+    test('I expect that 0 * 0 equals to 0', () => {
+        expect(multiply(0, 0)).toBe(0);
+    })
+
+    test('I expect that -15 * 45 equals to -675', () => {
+        expect(multiply(-15, 45)).toBe(-675);
+    })
+
+    test('I expect that 15 * -45 equals to -675', () => {
+        expect(multiply(15, -45)).toBe(-675);
+    })
+
+    test('I expect that -15 * -45 equals to 675', () => {
+        expect(multiply(-15, -45)).toBe(675);
+    })
+
+    test('I expect that 0.35 * 4 equals to 1.4', () => {
+        expect(multiply(0.35, 4)).toBe(1.4);
+    })
+
+    test('I expect that 10 * 0.35 equals to 3.5', () => {
+        expect(multiply(10, 0.35)).toBe(3.5);
+    })
+
+    test('I expect that 0.2 * 0.5 equals to 0.10', () => {
+        expect(multiply(0.2, 0.5)).toBe(0.10);
+    })
+
+    test('I expect that 0.35 * 4 equals to 1.4', () => {
+        expect(multiply(0.35, 4)).toBe(1.4);
+    })
+
+    test('I expect that null * 10 equals to 0', () => {
+        expect(multiply(null, 10)).toBe(0);
+    })
+
+    test('I expect that 150000 * null equals to 0', () => {
+        expect(multiply(150000, null)).toBe(0);
+    })
+
+    test('I expect that null * null equals to 0', () => {
+        expect(multiply(null, null)).toBe(0);
+    })
+
+    test('I expect that null * -15 equals to 0', () => {
+        expect(multiply(null, -15)).toBe(-0);
+    })
+
+    test('I expect that -0.478 * null equals to 0', () => {
+        expect(multiply(-0.478, null)).toBe(-0);
+    })
+})
