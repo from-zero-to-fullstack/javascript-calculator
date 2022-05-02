@@ -47,7 +47,17 @@ Open in Visual Studio Code
 ```bash
   code .
 ```
+## Install dependencies
 
+Node.js
+
+```bash
+  npm install
+```
+## Run tests
+```bash
+  npm test
+```
 # License
 
 MIT
