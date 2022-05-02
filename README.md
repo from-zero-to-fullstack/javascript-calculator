@@ -54,10 +54,6 @@ Node.js
 ```bash
   npm install
 ```
-Jest
-```bash
-  npm install --save-dev jest
-```
 ## Run tests
 ```bash
   npm test
